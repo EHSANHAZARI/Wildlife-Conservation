@@ -707,3 +707,65 @@ model.eval()
 
 Q: Why should you call model.eval() after loading a model?
 A: To ensure it runs in evaluation mode for inference (no dropout, stable batch norm).
+
+Q: What is the purpose of a pooling layer in a neural network?
+A: To reduce the size of feature maps, lowering computation and dimensions.
+
+Q: How does max pooling work?
+A: It takes a 2×2 window, selects the maximum value, and places it in the new feature map.
+
+Q: How does mean pooling work?
+A: It takes a 2×2 window and stores the average (mean) value in the new feature map.
+
+Q: What are the two main types of pooling?
+A: Max pooling and mean pooling.
+
+Q: What are the benefits of pooling layers?
+A:
+
+Reduce computation and dimensions
+
+Reduce overfitting (fewer parameters)
+
+Make the model flexible to variation and distortion
+
+Q: What is the overall process of a neural network for image recognition?
+A: Images → Convolution + ReLU → Pooling → Convolution + ReLU → Pooling → Flatten → Fully connected dense layer → Prediction (e.g., "Is this a koala?").
+
+Q: What role does convolution play in a neural network?
+A: It extracts features (like shapes) using filters, combining them to form higher-level representations.
+
+Q: What is the purpose of ReLU in CNNs?
+A: Introduce non-linearity, speed up training, keep positive values, and set negative values to zero.
+
+Q: What are the three main benefits of convolution operation?
+A:
+
+Reduce overfitting
+
+Location-invariant feature detection
+
+ReLU adds non-linearity and speeds up computation
+
+Q: What are the benefits of pooling in CNNs?
+A:
+
+Reduce dimensions and computation
+
+Reduce overfitting
+
+Make model tolerant to small distortions and variations
+
+Q: What is a limitation of CNNs?
+A: They cannot naturally handle rotation and scale variations.
+
+Q: How can CNNs handle rotation and scale?
+A: By using data augmentation (rotating, scaling, and resizing training samples).
+
+Q: What is data augmentation in deep learning?
+A: Generating new training samples by rotating, scaling, or modifying original images to improve model robustness.
+
+Q: How are convolutional filters in CNNs learned?
+A: The network automatically learns filters during training instead of requiring manual design.
+
+Would you like me to also convert this into a ready-to-import CSV file for Quizlet/Anki so you can upload and start using it immediately?
